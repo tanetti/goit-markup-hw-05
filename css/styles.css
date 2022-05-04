@@ -278,7 +278,7 @@ body {
 }
 
 .modal {
-  position: fixed;
+  position: absolute;
 
   width: 528px;
   height: 581px;
