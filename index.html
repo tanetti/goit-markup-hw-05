@@ -82,9 +82,26 @@
           <h1 class="hero-title no-margin">
             Эффективные решения<br />для вашего бизнеса
           </h1>
-          <button class="hero-button" type="button">Заказать услугу</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
+
+      <div class="modal-backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button
+            class="close-button"
+            type="button"
+            data-modal-close
+            aria-label="Закрыть окно"
+          >
+            <svg class="close-button-icon" width="11px" height="11px">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
 
       <!-- Особенности -->
       <section class="section">
@@ -148,25 +165,31 @@
         <div class="container">
           <h2 class="caption no-margin">Чем мы занимаемся</h2>
           <ul class="list work-list">
-            <li class="item">
+            <li class="work-list-item">
               <img
                 class="image"
                 width="370"
                 height="294"
                 src="./images/jobs/job1.jpg"
-                alt="Написание кода"
+                alt="Разработка десктопного приложения"
               />
+              <div class="work-list-item-caption">
+                <p class="paragraph">Десктопные приложения</p>
+              </div>
             </li>
-            <li class="item">
+            <li class="work-list-item">
               <img
                 class="image"
                 width="370"
                 height="294"
                 src="./images/jobs/job2.jpg"
-                alt="Выбор дизайна"
+                alt="Выбор дизайна мобильного приложения"
               />
+              <div class="work-list-item-caption">
+                <p class="paragraph">Мобильные приложения</p>
+              </div>
             </li>
-            <li class="item">
+            <li class="work-list-item">
               <img
                 class="image"
                 width="370"
@@ -174,6 +197,9 @@
                 src="./images/jobs/job3.jpg"
                 alt="Подбор цветовой гаммы"
               />
+              <div class="work-list-item-caption">
+                <p class="paragraph">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
